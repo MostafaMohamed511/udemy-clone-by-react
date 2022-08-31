@@ -1,0 +1,159 @@
+main
+{
+    width: 80%;
+    margin: 0 auto;
+}
+.intro{
+    position: relative ;
+    height: 320px;
+    margin-bottom: 1rem;
+}
+.intro img
+{
+    width: 100%;
+
+}
+.title{
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    background-color: #eeeeee;
+    width: 40%;    
+    height: 60%;
+    padding: 2rem;
+}
+@media (max-width:1000px) {
+    .title{
+        padding: 1rem;
+        height: 50%;
+    }
+    
+}
+@media  (max-width:850px){
+    .intro{
+        /*
+        height: 350px;
+        flex-direction: column;
+        flex-direction: column-reverse;*/
+        height: max-content;
+    } 
+    .title{
+        /* position: static;
+        width: 250px; */
+        display: none;
+    } 
+}
+.title h2{
+    font-weight:600;
+    font-size: 2rem;
+}
+.title p{
+    margin-top: 1rem;
+    font-weight:100;
+}
+.sections
+{
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+
+}
+.big-container
+{
+    position: relative;
+}
+.slider 
+{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    position: absolute;
+    top: calc(50% - 50px );
+    left: -25px;
+    border-radius: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 100;
+}
+.right
+{
+    left: calc(100% - 25px);
+}
+.courses{
+    margin: 30px 0px;
+    display:flex;
+    gap: 20px;
+    overflow: hidden;
+    max-width: 100vw;
+}
+.courses figure{
+    min-width: 250px;
+    max-width: 250px;
+    background-color: #eee;
+    min-height: 230px;
+}
+.courses figure img {
+    width: 100%;
+    border: #777 solid 1px;
+}
+.courses figure span
+{
+    color:#777 ;    
+}
+.courses p ,
+.courses span 
+{
+    /* padding-bottom: 1rem; */
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.course
+{
+    transition: 0.3s;
+}
+.top-cat
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Category
+{
+    margin: 10px 25px ;
+}
+.Category img
+{
+    width: 219px ;
+    height: 200px;
+
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    
+    background-color: black;
+    height: max-content;
+    padding: 1rem;
+}
+.list-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+footer img{
+    display: block;
+    margin: 0px 0px 10px 35px ;
+    max-width: 200px;
+ }
+.list-container a
+{
+    color:white;
+}
+.hidden
+{
+    display: none;
+}
