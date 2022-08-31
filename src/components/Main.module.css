@@ -58,7 +58,7 @@ main
     gap: 20px;
 
 }
-.big-container
+/* .big-container
 {
     position: relative;
 }
@@ -82,76 +82,19 @@ main
 .right
 {
     left: calc(100% - 25px);
-}
+} */
 .courses{
     margin: 30px 0px;
     display:flex;
+    flex-wrap: wrap;
     gap: 20px;
-    overflow: hidden;
+    /* overflow: hidden; */
     max-width: 100vw;
-}
-.courses figure{
-    min-width: 250px;
-    max-width: 250px;
-    background-color: #eee;
-    min-height: 230px;
-}
-.courses figure img {
-    width: 100%;
-    border: #777 solid 1px;
-}
-.courses figure span
-{
-    color:#777 ;    
-}
-.courses p ,
-.courses span 
-{
-    /* padding-bottom: 1rem; */
-    padding: 0.5rem;
-    margin-bottom: 0.5rem;
-}
-.course
-{
-    transition: 0.3s;
 }
 .top-cat
 {
     display: flex;
     flex-wrap: wrap;
-}
-.Category
-{
-    margin: 10px 25px ;
-}
-.Category img
-{
-    width: 219px ;
-    height: 200px;
-
-}
-footer{
-    display: flex;
-    flex-direction: column;
-    
-    background-color: black;
-    height: max-content;
-    padding: 1rem;
-}
-.list-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 2rem;
-}
-footer img{
-    display: block;
-    margin: 0px 0px 10px 35px ;
-    max-width: 200px;
- }
-.list-container a
-{
-    color:white;
 }
 .hidden
 {
