@@ -3,6 +3,7 @@
     max-width: 250px;
     background-color: #eee;
     min-height: 230px;
+
 }
 .course img {
     width: 100%;
@@ -23,3 +24,8 @@
 {
     transition: 0.3s;
 }
+/* .star
+{
+    color: gold;
+    font-size:5px;
+} */
