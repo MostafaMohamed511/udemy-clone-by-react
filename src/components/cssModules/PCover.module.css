@@ -1,0 +1,31 @@
+*
+{
+}
+.container
+{
+    width: 50%;
+    margin-left: 10%;
+    margin-right: 40%;
+}
+.cover
+{
+    background-color: black;
+    padding: 1rem ;
+    color :white;
+
+}
+.star
+{
+    width: 12px;
+    height: 12px;
+    color: gold;
+}
+.rating{
+    display: flex;
+    justify-content: center;
+}
+.icons ,
+.icons span {
+    display: flex;
+    justify-content: space-between;
+}

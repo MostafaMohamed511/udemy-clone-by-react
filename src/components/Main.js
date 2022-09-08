@@ -1,7 +1,9 @@
-import React , {useState} from 'react'
-import style from './Main.module.css'
+import React , { useState } from 'react'
+import style from './cssModules/Main.module.css'
 import Figure from './Figure'
 import Course from './Course'
+import { Link } from 'react-router-dom'
+import coursesContext from '../App'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
@@ -9,12 +11,14 @@ function Main({courses}) {
     const [x , setX] = useState(0) ;
     const [rightButton , setRightButton] = useState('') ;
     const [leftButton , setLeftButton] = useState('hidden') ;
+
     const rightButtonHandler = ()=>{
         if (x-270 == -270*(courses.length-4))
             setRightButton('hidden')
         setLeftButton('')
         setX(x-270); 
     }
+    
     const leftButtonHandler = ()=>{
         if (x== -270)
             setLeftButton('hidden')
@@ -46,15 +50,23 @@ function Main({courses}) {
         </div>
         <div className={style['big-container']}>
             
-            <div className={`${style.slider} ${style.left} ${leftButton==='hidden' ? style.hidden : ''}`} onClick={leftButtonHandler}>
+            <div 
+              className={`${style.slider} ${style.left} ${leftButton==='hidden' ? style.hidden : ''}`} 
+              onClick={leftButtonHandler}
+            >
                 <ArrowBackIosIcon />
             </div>
-             <div className={`${style.slider} ${style.right} ${ rightButton === 'hidden' ? style.hidden: '' }`} onClick={rightButtonHandler}>
+            <div 
+              className={`${style.slider} ${style.right} ${ rightButton === 'hidden' ? style.hidden: '' }`} 
+              onClick={rightButtonHandler}
+            >
                 <ArrowForwardIosIcon />
             </div>
            
             <div className={style.courses}>
-                {courses.map(el=> <Course key={el.id} img={el.image} title={el.title}  author={el.author} x={x}/>) }
+                {courses.map(el=> <Link key={el.id} to={`/courses/${el.id}`}>
+                    <Course img={el.image} title={el.title}  author={el.instructor.name} x={x}/>
+                </Link>) }
             </div>
         </div>
         <h2>Top Category</h2>

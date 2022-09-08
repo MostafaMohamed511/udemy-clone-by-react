@@ -1,5 +1,5 @@
 import React from 'react'
-import style from './Figure.module.css'
+import style from './cssModules/Figure.module.css'
 function Figure(props) {
   return (
     <figure className={style.Category}>

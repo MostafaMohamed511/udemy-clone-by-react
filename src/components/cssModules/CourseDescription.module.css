@@ -1,0 +1,36 @@
+.container
+{
+    width: 50%;
+    margin-left: 10%;
+    margin-right: 40%;
+    min-height: 600px;
+}
+.container >div{
+    margin: 50px 0;
+}
+.objectives{
+    padding: 10px;
+    border: 1px solid black;
+}
+.objectives ul{
+    list-style-type: none;
+    columns: 2 ;
+}
+.objectives ul li{
+    margin: 1rem 0;
+}
+.require ul{
+    padding-left: 1.4rem;
+}
+.shaded{
+    color: grey;
+}
+.imgContainer{
+    display: flex;
+    gap: 50px;
+    margin: 10px 0;
+}
+.imgContainer img{
+    width: 150px;
+    border-radius: 75px;
+}
